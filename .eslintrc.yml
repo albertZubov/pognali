@@ -1,0 +1,45 @@
+env:
+  es2017: true
+  browser: true
+  commonjs: true
+  jest: true
+
+extends: ['htmlacademy/react', 'plugin:react/recommended', "plugin:@typescript-eslint/recommended", 'prettier']
+
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: 2018
+  sourceType: module
+
+plugins: ['react']
+
+rules:
+  react/function-component-definition: 0
+  arrow-body-style: 0
+  indent: ["error", "tab", { "SwitchCase": 1 }]
+  no-console: 0
+  no-useless-escape: 0
+  no-use-before-define: 0
+  no-unused-vars: 0
+  react/prop-types: 0
+
+  # проверить после перевода проекта на typescript
+  "@typescript-eslint/member-delimiter-style":
+    - error
+    - multiline:
+        delimiter: none
+        requireLast: false
+      singleline:
+        delimiter: semi
+        requireLast: false
+        
+  "@typescript-eslint/explicit-module-boundary-types": 0
+  "@typescript-eslint/no-empty-function": 0
+  "@typescript-eslint/no-explicit-any": 0
+  "@typescript-eslint/no-unused-vars": 0
+
+
+settings:
+  react:
+    version: '16'
