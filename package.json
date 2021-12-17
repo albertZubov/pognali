@@ -8,6 +8,8 @@
     "axios": "^0.21.1",
     "classnames": "^2.3.1",
     "history": "^4.10.1",
+    "normalize-scss": "^7.0.1",
+    "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -25,7 +27,7 @@
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test --passWithNoTests",
     "eject": "react-scripts eject",
-    "eslint": "eslint --ext .jsx --ext .js --ext .ts --ext .tsx src/",
+    "eslint": "eslint --ext .jsx --ext .js --ext .ts --ext .tsx --ext .css --ext .scss src/",
     "test:eslint": "npm run eslint"
   },
   "eslintConfig": {
@@ -64,6 +66,7 @@
     "eslint-plugin-react-hooks": " ^4.2.0",
     "prettier": "^2.3.0",
     "redux-devtools-extension": "^2.13.9",
-    "redux-mock-store": "^1.5.4"
+    "redux-mock-store": "^1.5.4",
+    "sass": "^1.45.0"
   }
 }

@@ -1,0 +1,149 @@
+.directions {
+	background: #e8eaf2 url(../../../img/flags-back.png) 439px 130px no-repeat;
+	background-size: 289px;
+	border-bottom-right-radius: 60px;
+	border-bottom-left-radius: 60px;
+	margin-top: -50px;
+	position: relative;
+	padding: 211px 130px 140px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-position: 1091px 138px;
+	z-index: 1;
+
+	&::before {
+		content: '';
+		position: absolute;
+		width: 141px;
+		height: 141px;
+		border-radius: 20px;
+		background-color: #e2e5f2;
+		top: 140px;
+		left: 59px;
+		z-index: -1;
+	}
+}
+
+.directions__text-wrapper {
+	margin-right: 90px;
+	position: relative;
+	padding: 0;
+}
+
+.directions__title {
+	margin: 0;
+	font-weight: 700;
+	line-height: 1;
+	color: #ff8d30;
+	margin-bottom: 19px;
+	font-size: 45px;
+	padding-left: 0;
+}
+
+.directions__text {
+	width: 340px;
+	font-size: 28px;
+	line-height: 1.18;
+	letter-spacing: normal;
+	padding-left: 0;
+	margin-top: 58px;
+}
+
+.directions__list {
+	width: 560px;
+}
+
+.directions__item {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.directions__image {
+	border-radius: 0 20px 20px 0;
+	width: 186px;
+	display: block;
+}
+
+.directions__item-wrapper {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background: #fff;
+	padding: 23px 32px 19px;
+	flex-grow: 1;
+	margin-top: 0;
+	border-radius: 20px 0 0 20px;
+
+	&::before {
+		content: '';
+		position: absolute;
+		width: 70px;
+		height: 47px;
+		top: 22px;
+		right: -37px;
+	}
+
+	&--thailand::before {
+		background-image: url(../../../img/thailand.png);
+	}
+
+	&--france::before {
+		background-image: url(../../../img/france.png);
+	}
+
+	&--czech::before {
+		background-image: url(../../../img/czech.png);
+	}
+}
+
+.directions__name {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1;
+	color: #161c35;
+	margin-bottom: 5px;
+}
+
+.directions__tagline {
+	width: 100%;
+	margin-top: 0;
+	font-size: 20px;
+	color: rgba(68, 68, 68, 0.3);
+}
+
+.directions__people {
+	position: relative;
+	width: 100%;
+	font-size: 20px;
+	padding-left: 30px;
+	color: rgba(68, 68, 68, 0.3);
+	line-height: 1.4;
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 6px;
+		width: 21px;
+		height: 20px;
+		opacity: 0.1;
+		background: url(../../../img/icons/user.svg) center no-repeat;
+		background-size: 21px 20px;
+	}
+}
+
+.directions__to-all {
+	position: relative;
+	text-transform: none;
+	justify-content: flex-start;
+	font-size: 24px;
+	border-radius: 20px;
+	padding: 20px 34px;
+	width: 274px;
+	height: 81px;
+	margin-left: auto;
+	margin-right: 171px;
+	margin-top: -91px;
+}
