@@ -13,7 +13,6 @@ const Options = () => {
 			<ol className='options__list'>
 				{OptionsItem.map((item, id) => (
 					<li className={`options__item options__item--${id + 1}`} key={item}>
-						{/* <span className='options__item-number'>{id + 1}</span> */}
 						{item}
 					</li>
 				))}

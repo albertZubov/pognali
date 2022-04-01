@@ -10,7 +10,7 @@ const AboutUs = () => {
 				чужих.
 			</p>
 			<p className='about-us__bold'>
-				А если найдете кого-то близкого по духу — скорее зовите{' '}
+				А если найдете кого-то близкого по духу — скорее зовите
 				<span className='about-us__desktop-text'>его</span> в совместный трип!
 			</p>
 			<a className='about-us__to-all button' href='#'>

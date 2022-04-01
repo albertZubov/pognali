@@ -1,5 +1,5 @@
 .directions {
-	background: #e8eaf2 url(../../../img/flags-back.png) 439px 130px no-repeat;
+	background: #e8eaf2 url(./img/flags-back.png) 439px 130px no-repeat;
 	background-size: 289px;
 	border-bottom-right-radius: 60px;
 	border-bottom-left-radius: 60px;
@@ -29,6 +29,8 @@
 	margin-right: 90px;
 	position: relative;
 	padding: 0;
+	display: flex;
+	flex-direction: column;
 }
 
 .directions__title {
@@ -86,15 +88,15 @@
 	}
 
 	&--thailand::before {
-		background-image: url(../../../img/thailand.png);
+		background-image: url(./img/thailand.png);
 	}
 
 	&--france::before {
-		background-image: url(../../../img/france.png);
+		background-image: url(./img/france.png);
 	}
 
 	&--czech::before {
-		background-image: url(../../../img/czech.png);
+		background-image: url(./img/czech.png);
 	}
 }
 
@@ -129,21 +131,29 @@
 		width: 21px;
 		height: 20px;
 		opacity: 0.1;
-		background: url(../../../img/icons/user.svg) center no-repeat;
+		background: url(./img/user.svg) center no-repeat;
 		background-size: 21px 20px;
 	}
 }
 
 .directions__to-all {
+	display: flex;
+	justify-content: flex-start;
 	position: relative;
 	text-transform: none;
-	justify-content: flex-start;
 	font-size: 24px;
 	border-radius: 20px;
-	padding: 20px 34px;
+	padding-left: 34px;
 	width: 274px;
 	height: 81px;
-	margin-left: auto;
-	margin-right: 171px;
-	margin-top: -91px;
+	margin-top: auto;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 32px;
+		right: 42px;
+		border: 10px solid transparent;
+		border-left: 11px solid #000;
+	}
 }

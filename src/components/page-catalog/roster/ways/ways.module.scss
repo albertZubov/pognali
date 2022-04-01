@@ -1,0 +1,69 @@
+.ways {
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	flex-direction: row;
+	margin-top: 15px;
+}
+
+.item {
+	display: flex;
+	border-radius: 50%;
+	position: relative;
+	justify-content: center;
+	width: 32px;
+	height: 32px;
+	background: 0 0;
+	margin-right: 2px;
+	background-color: #fff;
+
+	&:hover .description {
+		width: 140px;
+		height: 40px;
+		border-radius: 4px;
+		background-color: #101d41;
+		font-size: 20px;
+		color: #fff;
+		position: absolute;
+		z-index: 10;
+		top: 40px;
+		left: -45px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.description {
+	font-size: 0;
+	line-height: 0;
+}
+
+.img {
+	opacity: 0.3;
+}
+
+.active {
+	opacity: 1;
+}
+
+.item-form {
+	width: 40px;
+	height: 40px;
+}
+
+.label {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.input {
+	&:checked + .img {
+		opacity: 1;
+	}
+}
