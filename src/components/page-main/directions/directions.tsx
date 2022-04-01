@@ -1,34 +1,12 @@
 import React from 'react'
+import { connect } from 'react-redux'
+import { getDirections } from '../../../store/selectors'
 
-const DirectionsItem = [
-	{
-		imgSrc: '../../../img/thailand.webp',
-		value: 'thailand',
-		name: 'Тайланд',
-		numberPeople: 18321,
-		tagline: 'Джугли зовут!',
-	},
-	{
-		imgSrc: '../../../img/france.webp',
-		value: 'france',
-		name: 'Франция',
-		numberPeople: 12518,
-		tagline: 'Трэ бьен, манифик!',
-	},
-	{
-		imgSrc: '../../../img/czech.webp',
-		value: 'czech',
-		name: 'Чехия',
-		numberPeople: 5326,
-		tagline: 'Закоулки старой Европы',
-	},
-]
-
-const Directions = () => {
+const Directions = ({ directionsItem }: any) => {
 	return (
 		<section className='directions container'>
 			<ul className='directions__list'>
-				{DirectionsItem.map((item) => (
+				{directionsItem.map((item: any) => (
 					<li className='directions__item' key={item.numberPeople}>
 						<div
 							className={`directions__item-wrapper directions__item-wrapper--${item.value}`}
@@ -53,12 +31,16 @@ const Directions = () => {
 					Мы не продаем туры и&nbsp;ничего не рекламируем. Люди сами пишут о
 					странах, куда хотели бы отправиться и чем можно там заняться.
 				</p>
+				<a className='directions__to-all button' href='form.html'>
+					Показать все
+				</a>
 			</div>
-			<a className='directions__to-all button' href='form.html'>
-				Показать все
-			</a>
 		</section>
 	)
 }
 
-export default Directions
+const mapStateToProps = (state: any) => ({
+	directionsItem: getDirections(state),
+})
+
+export default connect(mapStateToProps)(Directions)

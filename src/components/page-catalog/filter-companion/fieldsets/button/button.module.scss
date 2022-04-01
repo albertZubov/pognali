@@ -1,0 +1,13 @@
+.button {
+	padding: 0;
+	border: 0;
+	background: url(../../img/dropdown.svg) center no-repeat;
+	cursor: pointer;
+	transform: rotate(180deg);
+	width: 20px;
+	height: 10px;
+}
+
+.active {
+	transform: rotate(360deg);
+}

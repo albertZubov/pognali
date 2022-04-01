@@ -78,4 +78,13 @@ input[type='radio'].visually-hidden {
 	cursor: pointer;
 	border-radius: 25px;
 	background-color: #ffd74b;
+
+	&:hover {
+		background-color: #ffbd30;
+		transition: 0.3s;
+	}
+
+	&:active {
+		color: rgba(22, 28, 53, 0.3);
+	}
 }

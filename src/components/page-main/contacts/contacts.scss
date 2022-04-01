@@ -135,8 +135,7 @@
 		left: 0;
 		width: 90px;
 		height: 90px;
-		background: #121936 url(../../../img/icons/contacts-phone.svg) center
-			no-repeat;
+		background: #121936 url(./img/contacts-phone.svg) center no-repeat;
 		border-radius: 50%;
 		display: flex;
 		background-size: 36px;
@@ -150,7 +149,7 @@
 .subscribe__email {
 	background-size: 27px 19px;
 	&::before {
-		background-image: url(../../../img/icons/contacts-mail.svg);
+		background-image: url(./img/contacts-mail.svg);
 	}
 }
 
@@ -172,8 +171,7 @@
 	&::before {
 		content: '';
 		position: absolute;
-		background: #121936 url(../../../img/icons/contacts-location.svg) center
-			no-repeat;
+		background: #121936 url(./img/contacts-location.svg) center no-repeat;
 		border-radius: 50%;
 		width: 90px;
 		height: 90px;

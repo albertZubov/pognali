@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
 	return (
@@ -33,11 +34,11 @@ const Header = () => {
 						</a>
 					</li>
 					<li className='site-list__item'>
-						<a className='site-list__link' href='catalog.html'>
+						<Link className='site-list__link' to='catalog.html'>
 							<span className='site-list__link-text' data-hover='Попутчики'>
 								Попутчики
 							</span>
-						</a>
+						</Link>
 					</li>
 				</ul>
 				<ul className='main-nav__list user-list'>
